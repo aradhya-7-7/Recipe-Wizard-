@@ -2,7 +2,7 @@
 ```markdown
 # 🍽️ Recipe Wizard🪄
 
-Welcome to the **Recipe Wizard🪄**!. Recipe Wizard🪄 is an acronym of "REAct reCIpe seaRCH" This React app that allows users to search for delicious Indian recipes based on ingredients they have at home. You can save your favorite recipes and create a shopping list to make cooking easier and more fun! 
+Welcome to the **Recipe Wizard🪄**!. This React app that allows users to search for delicious Indian recipes based on ingredients they have at home. You can save your favorite recipes and create a shopping list to make cooking easier and more fun! 
 
 ## 🌟 Features
 
