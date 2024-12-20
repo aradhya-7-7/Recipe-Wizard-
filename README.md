@@ -65,10 +65,6 @@ The app features a modern and curvy design that is fully responsive for mobile d
 3. Add your favorite recipes to easily access them later.
 4. Generate a shopping list from your favorite recipes.
 
-## 📷 Screenshots
-
-![Homescreen](https://github.com/user-attachments/assets/1efba480-7591-4a6e-b4f8-341d9a70a698) ![RecipeDetail](https://github.com/user-attachments/assets/442c1827-9ffb-4fbd-93f0-96caee923945)
-
 ## 🤝 Contributing
 
 Contributions are welcome! If you have suggestions for improvements or want to add features, feel free to open an issue or submit a pull request.
@@ -81,8 +77,8 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 For any inquiries, feel free to reach out:
 
-- Your Name - [Your Email](mailto:aradhya610@example.com)
-- GitHub: [your-username](https://github.com/aradhya-7-7)
+- Your Name - [Aradhya Srivastava](mailto:aradhya610@example.com)
+- GitHub: [aradhya-7-7](https://github.com/aradhya-7-7)
 
 Enjoy cooking! 🍳
 ```
