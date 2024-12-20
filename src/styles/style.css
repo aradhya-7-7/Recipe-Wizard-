@@ -1,0 +1,148 @@
+/* General Styles */
+body {
+      font-family: 'Roboto', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to right, #ffefba, #ffffff); /* Soft yellow to white gradient */
+  }
+  
+  /* App Container */
+  .app {
+      text-align: center;
+      padding: 30px;
+      max-width: 1200px;
+      margin: auto;
+  }
+  
+  /* Input Styles */
+  input[type="text"] {
+      padding: 15px;
+      margin: 10px;
+      border: 2px solid #ff8c00; /* Vibrant orange border */
+      border-radius: 25px;
+      transition: border-color 0.3s ease;
+  }
+  
+  input[type="text"]:focus {
+      border-color: #ff5e00; /* Darker orange on focus */
+      box-shadow: 0 0 5px rgba(255, 140, 0, 0.5);
+  }
+  
+  /* Button Styles */
+  button {
+      padding: 12px 25px;
+      border: none;
+      border-radius: 25px;
+      background-color: #ff6f61; /* Coral background */
+      color: white;
+      cursor: pointer;
+      font-weight: bold;
+      transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  button:hover {
+      background-color: #ff4f3a; /* Darker coral on hover */
+      transform: translateY(-2px);
+  }
+  
+  /* Recipe Cards */
+  .recipes {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin: 20px 0;
+  }
+  
+  .recipe-card {
+      background-color: #ffffff; /* White background for cards */
+      border-radius: 20px;
+      margin: 15px;
+      padding: 20px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+      width: 280px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .recipe-card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+  }
+  
+  .recipe-card img {
+      width: 100%;
+      border-radius: 15px;
+  }
+  
+  /* Recipe Detail Modal */
+  .recipe-detail {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: rgba(0, 0, 0, 0.85);
+      color: white;
+      padding: 30px;
+      overflow-y: auto;
+      z-index: 1000;
+      transition: opacity 0.3s ease;
+  }
+  
+  .recipe-detail h2 {
+      margin-top: 0;
+  }
+  
+  /* Close Button */
+  .close-button {
+      background-color: #ff4c4c; /* Bright red */
+      color: white;
+      border: none;
+      padding: 12px 20px;
+      border-radius: 25px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+  }
+  
+  .close-button:hover {
+      background-color: #ff2b2b; /* Darker red on hover */
+  }
+  
+  /* Favorites & Shopping List */
+  .favorites,
+  .shopping-list {
+      margin-top: 40px;
+  }
+  
+  /* Favorite Item */
+  .favorite-item {
+      background-color: #ffe4b5; /* Light goldenrod */
+      padding: 15px;
+      margin: 10px;
+      border-radius: 15px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Headings */
+
+  h1 {
+      font-size: 3rem;
+  }
+  h1, h2, h3 {
+      color: #ff6f61; /* Coral for headings */
+  }
+  
+  /* Media Queries */
+  @media (max-width: 600px) {
+      .recipe-card {
+          width: 90%;
+      }
+  
+      button {
+          width: 100%;
+      }
+  
+      .app {
+          padding: 15px;
+      }
+  }
+  

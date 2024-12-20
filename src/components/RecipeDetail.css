@@ -1,0 +1,120 @@
+.recipe-detail {
+   position: fixed;
+   inset: 0;
+   background: rgba(45, 52, 54, 0.95);
+   backdrop-filter: blur(8px);
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   padding: clamp(1rem, 5vw, 3rem);
+   overflow-y: auto;
+   z-index: 1000;
+   animation: slideIn 0.3s ease-out;
+}
+
+.recipe-detail h2 {
+   color: #ff4f3a;
+   font-size: clamp(1.5rem, 4vw, 2.5rem);
+   margin: 1.5rem 0;
+   text-align: center;
+}
+
+.recipe-detail img {
+   width: min(50%, 200px);
+   height: auto;
+   border-radius: 16px;
+   box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+   margin: 1rem 0;
+   object-fit: cover;
+}
+
+.recipe-detail h3 {
+   color: var(--accent-color);
+   font-size: 1.5rem;
+   margin: 1.5rem 0 1rem;
+}
+
+.recipe-detail ul {
+   list-style: none;
+   padding: 0;
+   width: min(100%, 600px);
+}
+
+.recipe-detail li {
+   color: #fb8174;
+   padding: 0.75rem 1rem;
+   margin: 0.5rem 0;
+   background: rgba(255, 255, 255, 0.1);
+   border-radius: 8px;
+   transition: transform 0.2s ease;
+}
+
+.recipe-detail li:hover {
+   transform: translateX(10px);
+   background: rgba(255, 255, 255, 0.15);
+}
+
+.recipe-detail p {
+   color: #fff;
+   margin: 1.5rem 0;
+   font-size: 1.1rem;
+   text-align: center;
+}
+
+.recipe-detail a {
+   display: inline-block;
+   padding: 1rem 2rem;
+   background: var(--accent-color);
+   color: #ff4f3a;
+   text-decoration: none;
+   border-radius: 12px;
+   font-weight: 600;
+   margin: 1rem 0;
+   transition: all 0.3s ease;
+}
+
+.recipe-detail a:hover {
+   transform: translateY(-2px);
+   box-shadow: 0 4px 15px rgba(69, 183, 175, 0.3);
+}
+
+.close-button {
+   position: absolute;
+   top: 1rem;
+   right: 1rem;
+   background: var(--primary-color);
+   color: red;
+   border: none;
+   padding: 0.75rem 1.5rem;
+   border-radius: 8px;
+   cursor: pointer;
+   font-weight: 700;
+   transition: all 0.3s ease;
+}
+
+.close-button:hover {
+   background: var(--primary-dark);
+   transform: translateY(-2px);
+}
+
+@keyframes slideIn {
+   from {
+       opacity: 0;
+       transform: translateY(20px);
+   }
+   to {
+       opacity: 1;
+       transform: translateY(0);
+   }
+}
+
+@media (max-width: 768px) {
+   .recipe-detail {
+       padding: 1rem;
+   }
+   
+   .close-button {
+       top: 0.5rem;
+       right: 0.5rem;
+   }
+}
